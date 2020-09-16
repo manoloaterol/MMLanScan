@@ -35,16 +35,32 @@
         
         while(temp_addr != NULL) {
             
+#if !TARGET_OS_MACCATALYST
             // check if interface is en0 which is the wifi connection on the iPhone
             if(temp_addr->ifa_addr->sa_family == AF_INET) {
                 
-                if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
+                if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"] == 1) {
                     
+                    
+                    localDevice.ipAddress = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
+                    localDevice.subnetMask = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_netmask)->sin_addr)];
+                    localDevice.hostname = [self getHostFromIPAddress:localDevice.ipAddress];
+                    
+                }
+            }
+#else
+            if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en1"] == 1) {
+                
+                if(temp_addr->ifa_netmask != NULL){
                     localDevice.ipAddress = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
                     localDevice.subnetMask = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_netmask)->sin_addr)];
                     localDevice.hostname = [self getHostFromIPAddress:localDevice.ipAddress];
                 }
             }
+#endif
+            
+            
+
             
             temp_addr = temp_addr->ifa_next;
         }

@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#if TARGET_IPHONE_SIMULATOR
+#if !TARGET_OS_MACCATALYST
 #include "route.h"
 #else
-#include "route.h"
+#include <net/route.h>
+
 #endif
 
 #include "if_ether.h"

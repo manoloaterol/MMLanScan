@@ -16,13 +16,14 @@
 		274DE7971DCF2CD900C6E09A /* MACOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 274DE7891DCF2CD900C6E09A /* MACOperation.m */; };
 		274DE7991DCF2CDA00C6E09A /* NetworkCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 274DE78D1DCF2CD900C6E09A /* NetworkCalculator.m */; };
 		274DE79A1DCF2CDA00C6E09A /* PingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 274DE78F1DCF2CD900C6E09A /* PingOperation.m */; };
-		274DE79B1DCF2CDA00C6E09A /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 274DE7921DCF2CD900C6E09A /* SimplePing.m */; };
 		274DE7A51DCF2DE200C6E09A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DE7A41DCF2DE200C6E09A /* MainVC.swift */; };
 		274DE7A71DCF2E1200C6E09A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DE7A61DCF2E1200C6E09A /* MainPresenter.swift */; };
 		274DE7AC1DCF3AF400C6E09A /* MMLANScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 274DE7AB1DCF3AF400C6E09A /* MMLANScanner.m */; };
 		274DE7F21DCFE52200C6E09A /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274DE7F11DCFE52200C6E09A /* DeviceCell.swift */; };
 		27603A6B1E3AAF7700F17DB5 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27603A6A1E3AAF7700F17DB5 /* data.plist */; };
 		27F0DFD21F1065E40043C777 /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F0DFD11F1065E40043C777 /* MMDevice.m */; };
+		407624A8251E199A00C55D88 /* SimplePing_withoutHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 407624A7251E199A00C55D88 /* SimplePing_withoutHost.m */; };
+		407624AC251E19AA00C55D88 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 407624AA251E19AA00C55D88 /* SimplePing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +46,6 @@
 		274DE78D1DCF2CD900C6E09A /* NetworkCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkCalculator.m; path = ../../MMLanScan/Misc/NetworkCalculator.m; sourceTree = "<group>"; };
 		274DE78E1DCF2CD900C6E09A /* PingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PingOperation.h; path = ../../MMLanScan/Misc/PingOperation.h; sourceTree = "<group>"; };
 		274DE78F1DCF2CD900C6E09A /* PingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PingOperation.m; path = ../../MMLanScan/Misc/PingOperation.m; sourceTree = "<group>"; };
-		274DE7911DCF2CD900C6E09A /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
-		274DE7921DCF2CD900C6E09A /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 		274DE7A41DCF2DE200C6E09A /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		274DE7A61DCF2E1200C6E09A /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		274DE7AA1DCF3AF400C6E09A /* MMLANScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMLANScanner.h; path = ../../MMLanScan/Misc/MMLANScanner.h; sourceTree = "<group>"; };
@@ -56,6 +55,10 @@
 		27603A6A1E3AAF7700F17DB5 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		27F0DFD01F1065E40043C777 /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
 		27F0DFD11F1065E40043C777 /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
+		407624A6251E199A00C55D88 /* SimplePing_withoutHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing_withoutHost.h; sourceTree = "<group>"; };
+		407624A7251E199A00C55D88 /* SimplePing_withoutHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing_withoutHost.m; sourceTree = "<group>"; };
+		407624AA251E19AA00C55D88 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		407624AB251E19AA00C55D88 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +96,10 @@
 		270DD9FC1E4653D20041A61B /* Simple Ping */ = {
 			isa = PBXGroup;
 			children = (
-				274DE7911DCF2CD900C6E09A /* SimplePing.h */,
-				274DE7921DCF2CD900C6E09A /* SimplePing.m */,
+				407624AB251E19AA00C55D88 /* SimplePing.h */,
+				407624AA251E19AA00C55D88 /* SimplePing.m */,
+				407624A6251E199A00C55D88 /* SimplePing_withoutHost.h */,
+				407624A7251E199A00C55D88 /* SimplePing_withoutHost.m */,
 			);
 			name = "Simple Ping";
 			path = "../MMLanScan/External Libs/SimplePing";
@@ -323,14 +328,15 @@
 			files = (
 				274DE7A51DCF2DE200C6E09A /* MainVC.swift in Sources */,
 				274DE7991DCF2CDA00C6E09A /* NetworkCalculator.m in Sources */,
-				274DE79B1DCF2CDA00C6E09A /* SimplePing.m in Sources */,
 				274DE7951DCF2CD900C6E09A /* LANProperties.m in Sources */,
 				274DE7971DCF2CD900C6E09A /* MACOperation.m in Sources */,
+				407624A8251E199A00C55D88 /* SimplePing_withoutHost.m in Sources */,
 				274DE7AC1DCF3AF400C6E09A /* MMLANScanner.m in Sources */,
 				274DE7961DCF2CD900C6E09A /* MacFinder.m in Sources */,
 				27F0DFD21F1065E40043C777 /* MMDevice.m in Sources */,
 				274DE7A71DCF2E1200C6E09A /* MainPresenter.swift in Sources */,
 				274DE76D1DCF2C6C00C6E09A /* AppDelegate.swift in Sources */,
+				407624AC251E19AA00C55D88 /* SimplePing.m in Sources */,
 				274DE79A1DCF2CDA00C6E09A /* PingOperation.m in Sources */,
 				274DE7F21DCFE52200C6E09A /* DeviceCell.swift in Sources */,
 			);
